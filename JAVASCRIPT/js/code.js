@@ -1,0 +1,1 @@
+window.alert("How can I help me");

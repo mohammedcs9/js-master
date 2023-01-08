@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>arrays</title>
+    <head>
+        <body>
+            <p id="myParagraph">java script.</p>
+            <script>
+            var shoppingList = ["bread", "eggs", "milk"]
+            //var shoppingList = new Array("bread","eggs","milk");
+           // document.getElementById("myParagraph").innerHTML += "<br />" + shoppingList;
+             //document.getElementById("myParagraph").innerHTML += "<br />" + shoppingList[0];  
+            //document.getElementById("myParagraph").innerHTML += "<br />" + shoppingList[2];
+             showResult(shoppingList);
+             showResult(shoppingList[0]); 
+             showResult(shoppingList[2]);
+             function showResult(x){
+              document.getElementById("myParagraph").innerHTML += "<br />" + x;  
+             }  
+             shoppingList[1] = "yogurt";
+             showResult(shoppingList);
+             shoppingList[2] = "orange";
+             showResult(shoppingList);
+             delete shoppingList[1];
+             showResult(shoppingList);    
+             //window.alert(shoppingList[1]);
+             shoppingList[1] = "yogurt";
+             showResult(shoppingList);   
+             shoppingList.splice(1,1);
+             showResult(shoppingList);
+             shoppingList.splice(1,0,"banana", "apple"); 
+             showResult(shoppingList); 
+             shoppingList.sort();
+             showResult(shoppingList); 
+             shoppingList.reverse();
+             showResult(shoppingList);
+             //var myString = "A   BCD";
+             var myString = "waht is weather like?";    
+             var myArray = myString.split(' ',3);
+             showResult(myArray);    
+            </script>
+        </body>
+    
+    </head>
+
+</html>
